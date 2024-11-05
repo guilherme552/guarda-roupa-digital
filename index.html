@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guarda Roupa Virtual</title>
+  <link rel="stylesheet" href="index.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div id="loginScreen" class="screen">
+    <img src="Captura de tela 2024-11-01 011544.jpeg" alt="Logo" class="logo"> 
+    <div class="input-container"><!DOCTYPE html>
+      <html lang="pt-BR">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guarda Roupa Virtual</title>
+        <link rel="stylesheet" href="index.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      </head>
+      <body>
+        <!-- Tela de Login -->
+        <div id="loginScreen" class="screen">
+          <img src="Captura de tela 2024-11-01 011544.jpeg" alt="Logo" class="logo"> 
+          <div class="input-container">
+            <div class="input-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="text" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Senha" required>
+            </div>
+          </div>
+          <button onclick="login()">Entrar</button>
+          <button onclick="showCadastro()">Fazer Cadastro</button>
+        </div>
+      
+        
+        <div id="cadastroScreen" class="screen hidden">
+          <img src="Captura de tela 2024-11-03 105323.png" alt="Logo" class="logo"> 
+          <h2>Cadastro</h2>
+          <div class="input-container">
+            <div class="input-icon">
+              <i class="fas fa-user"></i>
+              <input type="text" id="nomeCadastro" placeholder="Nome completo" required>
+            </div>
+            <div class="input-icon">
+              <i class="fas fa-calendar"></i>
+              <input type="date" id="dataNascimento" placeholder="Data de nascimento" required>
+            </div>
+            <div class="input-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="text" id="emailCadastro" placeholder="Email ou Celular" required>
+            </div>
+            <div class="input-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="passwordCadastro" placeholder="Senha" required>
+            </div>
+          </div>
+          <button onclick="register()">Cadastrar-se</button>
+        </div>
+      
+        <!-- Tela de Boas-vindas -->
+        <div id="welcomeScreen" class="screen hidden">
+          <h2>Bem-vindo ao PraticLook</h2>
+          <p>Para uma melhor experiência, baixe suas melhores fotos através de UPLOADS.</p>
+          <div class="options">
+            <div class="option" onclick="upload()">
+              <img src="Captura de tela 2024-11-03 114906.jpeg" alt="Upload"> <!-- Ícone de upload -->
+              
+            </div>
+            <div class="option" onclick="filter()">
+              <img src="Captura de tela 2024-11-03 115331.jpeg" alt="Filtro"> <!-- Ícone de filtro -->
+              
+            </div>
+            <div class="option" onclick="savedModels()">
+              <img src="Captura de tela 2024-11-03 223138.jpeg" alt="Modelos Salvos"> <!-- Ícone de modelos salvos -->
+              
+            </div>
+          </div>
+        </div>
+      
+        <script src="index.js"></script>
+      </body>
+      </html>
+      
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="text" id="email" placeholder="Email" required>
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Senha" required>
+      </div>
+    </div>
+    <button onclick="login()">Entrar</button>
+    <button onclick="showCadastro()">Fazer Cadastro</button>
+  </div>
+
+  
+  <div id="cadastroScreen" class="screen hidden">
+    <img src="Captura de tela 2024-11-03 105323.png" alt="Logo" class="logo"> 
+    <h2>Cadastro</h2>
+    <div class="input-container">
+      <div class="input-icon">
+        <i class="fas fa-user"></i>
+        <input type="text" id="nomeCadastro" placeholder="Nome completo" required>
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-calendar"></i>
+        <input type="date" id="dataNascimento" placeholder="Data de nascimento" required>
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="text" id="emailCadastro" placeholder="Email ou Celular" required>
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="passwordCadastro" placeholder="Senha" required>
+      </div>
+    </div>
+    <button onclick="register()">Cadastrar-se</button>
+  </div>
+
+  <!-- Tela de Boas-vindas -->
+  <div id="welcomeScreen" class="screen hidden">
+    <h2>Bem-vindo ao PraticLook</h2>
+    <p>Para uma melhor experiência, baixe suas melhores fotos através de UPLOADS.</p>
+    <div class="options">
+      <div class="option" onclick="upload()">
+        <img src="Captura de tela 2024-11-03 114906.jpeg" alt="Upload"> <!-- Ícone de upload -->
+        
+      </div>
+      <div class="option" onclick="filter()">
+        <img src="Captura de tela 2024-11-03 115331.jpeg" alt="Filtro"> <!-- Ícone de filtro -->
+        
+      </div>
+      <div class="option" onclick="savedModels()">
+        <img src="Captura de tela 2024-11-03 223138.jpeg" alt="Modelos Salvos"> <!-- Ícone de modelos salvos -->
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
